@@ -31,7 +31,7 @@ public class CartController extends AbstractCtl {
      * @param request
      * @param response
      */
-    @RequestMapping(value = "/query")
+    @RequestMapping(value = "/query")                                       //推荐使用一个注解：@ResponseBody，可以直接返回Object,不用每次都写成response.getOutputStream().write(resultStr.getBytes());
     public void getCart(HttpServletRequest request, HttpServletResponse response) throws Exception{
         Cart result = new Cart();
         String resultStr = "";
