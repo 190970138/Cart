@@ -115,7 +115,7 @@ public class CartServiceImpl implements ICartService {
      * @throws Exception
      */
     @Override
-    public int delectCart(List<String> cartIds) throws Exception {
+    public int delectCart(List<String> cartIds) throws Exception {      //物理删除的啊，要不要考虑修改状态
         if (cartIds == null) {
             throw new NullPointerException("ids is null");
         }
